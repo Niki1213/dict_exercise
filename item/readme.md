@@ -1,10 +1,10 @@
 
-#1.需求分析
+# １.需求分析
 * 并发方案：　Process多进程
 * 套接字:运用tcp防止数据丢失
 --------
-#2.数据库：
-    1.用户表：
+# 2.数据库：
+    1. 用户表：
     (```)
         create table user(
         id int primary key auto_increment,
@@ -13,7 +13,7 @@
         tel int(24) unsigned,
         createtime datetime default now());
     (```)
-    2.历史记录表：
+    2. 历史记录表：
      (```)
         create table hist(
         id int primary key auto_increment, 
@@ -22,7 +22,7 @@
         time datetime default now());
       (```)
 --------
-#3.结构设计, 如何封装,客户端服务端工作流程
+# 3.结构设计, 如何封装,客户端服务端工作流程
 
     * 客户端 (发请求,展示结果)
     * 服务端 (逻辑操作,解决请求)
@@ -36,7 +36,7 @@
 			while  True:
 				界面2
 ---------
-#4.功能划分：
+# 4.功能划分：
     网络搭建
     注册
     登录
